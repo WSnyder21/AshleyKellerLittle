@@ -7,17 +7,12 @@
 /* Custom Fonts */
 
 @font-face {
-    font-family: titleFont;
+    font-family: headingFont;
     src: url(./fonts/Sanctuary.ttf);
 }
 
 @font-face {
-    font-family: subtitleFont;
-    src: url(./fonts/PureEvil.ttf);
-}
-
-@font-face {
-    font-family: heroineFont;
+    font-family: titleFont;
     src: url(./fonts/PureEvil.ttf);
 }
 
@@ -27,19 +22,10 @@
 }
 
 @font-face {
-    font-family: trialFont;
+    font-family: subtitleFont;
     src: url(./fonts/Achafexp.ttf);
 }
 
-@font-face {
-    font-family: trialFont2;
-    src: url(./fonts/Anvil.ttf);
-}
-
-@font-face {
-    font-family: trialFont3;
-    src: url(./fonts/TestamentoJeda.ttf);
-}
 
 /* Bleeding Background  */
 
@@ -66,18 +52,20 @@ body {
     font-weight: 100;
     margin-top: 5px;
     margin-bottom: 10px;
-    font-family: subtitleFont;
+    font-family: titleFont;
     z-index: 2;
 }
 
 .subtitle {
-    background: -webkit-linear-gradient(rgb(0, 0, 0), rgb(255, 255, 255), rgb(125, 0, 0));
+    background: -webkit-linear-gradient(rgb(155, 155, 155), rgb(255, 255, 255), rgb(255, 96, 96));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 58px;
+    font-size: 50px;
     font-weight: 600;
     margin-top: -20px;
-    font-family: trialFont;
+    width: 90%;
+    text-align: center;
+    font-family: subtitleFont;
     z-index: 2;
 }
 
@@ -96,7 +84,7 @@ body {
 }
 
 .heroineImg {
-    max-width: 500px;
+    max-width: auto;
     max-height: 500px;
     margin-top: 10px;
     padding-right: 3px;
@@ -136,29 +124,32 @@ body {
     display: flex;
     flex-direction: column;
     /* margin-top: 50px; */
-    height: 100vh;
+    height: 200%;
     justify-content: center;
     align-items: center;
     row-gap: 50px;
     background: rgb(0, 43, 0);
     background: linear-gradient(180deg, rgba(0, 43, 0, 1) 0%, rgba(0, 0, 0, 1) 25%);
+
 }
 
 .platform {
     display: flex;
     flex-direction: column;
-    background: -webkit-linear-gradient(#fff, rgb(0, 203, 0), rgb(255, 255, 255));
+    background: -webkit-linear-gradient(#fff, rgb(0, 203, 0));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 40px;
-    font-family: titleFont;
+    font-size: 34px;
+    font-family: headingFont;
     align-items: center;
-    padding-top: 50px;
+    padding-top: 10%;
+    margin: 0 2em;
+    text-align: center;
 }
 
 .platform>p {
     font-family: paragraphFont;
-    font-size: 32px;
+    font-size: 24px;
 }
 
 .twoRoads {
@@ -168,11 +159,11 @@ body {
     background: -webkit-linear-gradient(#fff, rgb(0, 203, 0), rgb(255, 255, 255));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 40px;
-    font-family: titleFont;
-    column-gap: 50px;
+    font-size: 32px;
+    font-family: headingFont;
+    column-gap: 10px;
     align-items: center;
-    margin-left: 0px;
+    margin: 0 2em;
 }
 
 .books {
@@ -180,18 +171,16 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 400px;
+    width: 30%;
 }
 
 .books>p {
     font-family: paragraphFont;
-    font-size: 32px;
+    font-size: 24px;
 }
 
 .pathsImg {
-    flex-grow: 2;
-    max-height: 400px;
-
+    width: 40%;
 }
 
 .podcast {
@@ -199,29 +188,31 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 400px;
+    width: 30%;
 }
 
 .podcast>p {
     font-family: paragraphFont;
-    font-size: 32px;
+    font-size: 24px;
 }
 
 .themes {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 40px;
-    font-family: titleFont;
+    font-size: 34px;
+    font-family: headingFont;
     background: -webkit-linear-gradient(#fff, rgb(0, 203, 0), rgb(255, 255, 255));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding-bottom: 50px;
+    margin: 0 2em;
 }
 
 .themes>p {
     font-family: paragraphFont;
     font-size: 32px;
+    text-align: center;
 }
 
 .spacer2 {
@@ -236,14 +227,14 @@ body {
     box-shadow: inset 0 0 1000rem #000000;
     height: 100vh;
     color: white;
-    padding: 20px 20px;
+    padding: 2em 2em;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
 .bio>h1 {
-    font-family: titleFont;
+    font-family: headingFont;
     font-size: 78px;
     margin-top: 20px;
 }
@@ -255,38 +246,12 @@ body {
 }
 
 .bioStart {
-    font-family: trialFont2;
-    font-size: 150px;
+    font-family: trialFont3;
+    font-size: 170px;
+    line-height: 50px;
 }
 
-.bio>h2 {
-    font-family: titleFont;
-    font-size: 40px;
-    margin: 10px 0;
-}
 
-.otherWork {
-    display: flex;
-    justify-content: space-evenly;
-    column-gap: 200px;
-    position: relative;
-    text-align: center;
-    color: black;
-}
-
-.otherWork>a>img {
-    max-height: 200px;
-}
-
-.imgText {
-    position: absolute;
-    top: 50%;
-    left: 77%;
-    transform: translate(-50%, -50%);
-    font-family: paragraphFont;
-    font-size: 26px;
-    font-weight: bolder;
-}
 
 .spacer3 {
     height: 50vh;
@@ -299,7 +264,7 @@ body {
 }
 
 .spacer3>h1 {
-    font-family: titleFont;
+    font-family: headingFont;
     font-size: 70px;
     background: -webkit-linear-gradient(rgba(0, 0, 0, 1) 0%, rgba(255, 162, 13, 1) 25%, rgba(255, 255, 255, 1) 100%);
 
@@ -310,7 +275,7 @@ body {
 .contactForm {
     display: flex;
     height: 100vh;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     font-family: paragraphFont;
     flex-direction: column;
@@ -324,10 +289,18 @@ body {
 
 }
 
+.contactBook {
+    display: none;
+}
+
 .contactForm>p {
     font-family: paragraphFont;
     font-size: 24px;
     text-align: center;
+}
+
+.columnSpacer>img {
+    display: none;
 }
 
 .launchlist-form>label {
@@ -365,4 +338,339 @@ body {
 .skullImg {
     max-height: 400px;
     margin-top: 0;
+}
+
+/*Footer*/
+
+footer {
+    padding-top: 150px;
+}
+
+footer>h2 {
+    font-family: headingFont;
+    font-size: 40px;
+    margin: 10px 0;
+    color: white;
+    text-align: center;
+}
+
+.otherWork {
+    display: flex;
+    justify-content: space-evenly;
+    column-gap: 200px;
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+.otherWork>a>img {
+    max-height: 200px;
+}
+
+.imgText {
+    position: absolute;
+    top: 50%;
+    left: 71%;
+    transform: translate(-50%, -50%);
+    font-family: paragraphFont;
+    font-size: 26px;
+    font-weight: bolder;
+}
+
+.imgText>a {
+    color: black;
+    text-decoration: none;
+}
+
+.footnote {
+    color: white;
+    text-align: center;
+    font-family: paragraphFont;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.footnote>p>a {
+    color: white;
+}
+
+.footnote>p>a:hover {
+    color: orange;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1392px) {
+
+    .twoRoads {
+        flex-direction: column;
+    }
+
+    .pathsImg {
+        order: 2;
+        width: 80%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .books {
+        order: 3;
+        width: 90%;
+        margin: 0;
+    }
+
+    .books>h1 {
+        padding-top: 25px 0;
+    }
+
+    .podcast {
+        order: 4;
+        width: 90%;
+    }
+
+    .podcast>h1 {
+        padding: 15px 0;
+    }
+
+    .podcast>p {
+        text-align: end;
+    }
+
+    .themes {
+        order: 5;
+    }
+
+    .themes>p {
+        font-size: 28px;
+    }
+
+    .bio {
+        height: 125vh;
+    }
+
+    .bio>p {
+        padding: 20px;
+    }
+
+    .spacer3 {
+        height: 75vh;
+        display: flex;
+        background: rgb(0, 0, 0);
+        background: linear-gradient(360deg, rgba(0, 0, 0, 1) 49%, rgba(5, 28, 43, 1) 100%);
+        box-shadow: inset 0 0 1000rem #000000;
+        justify-content: center;
+    }
+
+    .contactForm {
+        height: 300vh;
+        flex-wrap: nowrap;
+        background-image: none;
+    }
+
+    .contactBook {
+        display: flex;
+        width: 40%;
+        height: auto;
+    }
+
+    .columnSpacer>img {
+        display: flex;
+    }
+
+    .book {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 1060px) {
+    .title {
+        font-size: 100px;
+    }
+
+    .subtitle {
+        font-size: 50px;
+    }
+
+    .heroineImg {
+        width: 38%;
+        height: auto;
+    }
+
+    .heroineQuote {
+        font-size: 22px;
+    }
+
+    .platform {
+        order: 0;
+        width: 90%;
+    }
+
+    .platform>h1 {
+        padding-bottom: 20px;
+    }
+
+    .bio {
+        height: 150vh;
+    }
+
+    .bioStart {
+        font-size: 110px;
+    }
+
+    .bio>h1 {
+        font-size: 62px;
+    }
+
+    .bio>p {
+        width: 90%;
+        font-size: 28px;
+    }
+
+    .spacer3 {
+        height: 50vh;
+        background: rgb(0, 0, 0);
+        background: linear-gradient(360deg, rgba(0, 0, 0, 1) 49%, rgba(5, 28, 43, 1) 100%);
+        box-shadow: inset 0 0 1000rem #000000;
+    }
+
+    .contactForm {
+        background: black;
+        flex-wrap: nowrap;
+        height: 300vh;
+    }
+
+    .otherWork {
+        column-gap: 100px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 70px;
+    }
+
+    .subtitle {
+        font-size: 31px;
+    }
+
+    .heroineImg {
+        width: 50%;
+        height: auto;
+    }
+
+    .heroineQuote>h2 {
+        font-size: 24px;
+        background: -webkit-linear-gradient(#fff, rgb(243, 138, 138), rgb(255, 255, 255));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .pathsImg {
+        width: 90%;
+    }
+
+    .books>h1 {
+        padding: 30px 0;
+    }
+
+    .podcast>h1 {
+        padding: 30px 0;
+    }
+
+    .bio {
+        height: 150vh;
+    }
+
+    .bioStart {
+        font-size: 100px;
+    }
+
+    .bio>h1 {
+        font-size: 52px;
+        margin: 20px;
+    }
+
+    .bio>p {
+        width: 90%;
+        font-size: 24px;
+    }
+
+    .otherWork {
+        column-gap: 10px;
+    }
+
+    .otherWork>a>img {
+        height: 150px;
+        width: auto;
+    }
+
+}
+
+@media screen and (max-width: 632px) {
+    .bio {
+        height: 200vh;
+    }
+
+    .spacer3 {
+        height: 100vh;
+    }
+
+    .spacer3>h1 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .bio {
+        height: 250vh;
+    }
+
+    .spacer3 {
+        height: 50vh;
+    }
+
+    .spacer3>h1 {
+        text-align: center;
+        font-size: 54px;
+    }
+
+    .launchlist-form>input {
+        width: 300px;
+    }
+
+    .otherWork {
+        flex-direction: column;
+
+    }
+
+    .imgText {
+        top: 75%;
+        left: 50%;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .bio {
+        height: 275vh;
+    }
+
+    .spacer3 {
+        height: 75vh;
+    }
+
+    .contactForm>p {
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .bio {
+        height: 370vh;
+    }
+
+    .spacer3 {
+        height: 75vh;
+    }
 }

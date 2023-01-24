@@ -657,8 +657,16 @@ footer>h2 {
 }
 
 @media screen and (max-width: 426px) {
+    .heroineTitle {
+        text-align: center;
+    }
+
     .bio {
         height: 275vh;
+    }
+
+    .bio>h1 {
+        text-align: center;
     }
 
     .spacer3 {

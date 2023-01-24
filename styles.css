@@ -26,6 +26,11 @@
     src: url(./fonts/Achafexp.ttf);
 }
 
+@font-face {
+    font-family: bioFirstLtr;
+    src: url(./fonts/Celexa.ttf);
+}
+
 
 /* Bleeding Background  */
 
@@ -246,7 +251,7 @@ body {
 }
 
 .bioStart {
-    font-family: trialFont3;
+    font-family: bioFirstLtr;
     font-size: 170px;
     line-height: 50px;
 }

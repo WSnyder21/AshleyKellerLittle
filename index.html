@@ -13,21 +13,26 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Josefin+Sans:wght@300;400;600&family=Oswald&display=swap"
         rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://getlaunchlist.com/js/widget-diy.js" defer></script>
+
 </head>
 
 <body>
     <div class="heroineTitle">
-        <h1 class="title">Ashley Keller Little</h1>
-        <h2 class="subtitle">Author &spades; Award Winning Entrepreneur &spades; Investigator &spades; Truth Seeker
+        <h1 class="title" data-aos="fade-down" data-aos-duration="2000">Ashley Keller Little</h1>
+        <h2 class="subtitle" data-aos="fade-down" data-aos-duration="3000" data-aos-delay="250">Author &spades; Award
+            Winning Entrepreneur
+            &spades; Investigator &spades; Truth Seeker
             &spades;
             Spiritual Teacher &spades;
             Influencer &spades; Artistic Innovator</h2>
         <!-- <img src="./images/3rdEye.jpg" alt="" class="img2"> -->
     </div>
     <div class="heroineContent">
-        <img class="heroineImg" src="./images/akl.jpg" alt="Ashley Keller Little profile pic">
-        <div class="heroineQuote">
+        <img class="heroineImg" src="./images/akl.jpg" alt="Ashley Keller Little profile pic" data-aos="fade-down"
+            data-aos-duration="3000" data-aos-delay="500">
+        <div class="heroineQuote" data-aos="fade-down" data-aos-duration="3000" data-aos-delay="3000">
             <h2>"Things that excite you, intrigue you, or things that you are downright passionate about -- they are not
                 random. Nothing is random. Everything is connected... connected to your divine purpose. Follow them."
             </h2>
@@ -148,11 +153,18 @@
                     Disclosure</a></div>
         </div>
         <div class="footnote">
-            <p>Site powered by <a href="www.opticdesignpro.com" target="_blank">Optic Design Pro</a></p>
+            <p>Site powered by <a href="www.opticdesignpro.com" target="_blank">Optic Design Pro</a><br><a
+                    href="https://audionautix.com/" target="_blank">Music by Audionautix.com</a></p>
+            <iframe src="silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
+
+            <audio id="audioID" autoplay loop controls>
+                <source src="./TheTalk.mp3" type="audio/mp3"> Your browser does not support our music file.
+            </audio>
+
         </div>
     </footer>
 </body>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="scripts.js"></script>
 
 </html>

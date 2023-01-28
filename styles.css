@@ -31,7 +31,6 @@
     src: url(./fonts/Celexa.ttf);
 }
 
-
 /* Bleeding Background  */
 
 canvas {
@@ -397,6 +396,7 @@ footer>h2 {
 
 .footnote>p>a {
     color: white;
+    text-decoration: none;
 }
 
 .footnote>p>a:hover {
@@ -657,6 +657,7 @@ footer>h2 {
 }
 
 @media screen and (max-width: 426px) {
+
     .heroineTitle {
         text-align: center;
     }

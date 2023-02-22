@@ -195,6 +195,11 @@ body {
     width: 30%;
 }
 
+.podcastImg {
+    max-width: 90%;
+    margin-bottom: 10px;
+}
+
 .podcast>p {
     font-family: paragraphFont;
     font-size: 24px;
@@ -299,7 +304,7 @@ body {
 
 .contactForm>p {
     font-family: paragraphFont;
-    font-size: 24px;
+    font-size: 32px;
     text-align: center;
 }
 
@@ -401,6 +406,11 @@ footer>h2 {
 
 .footnote>p>a:hover {
     color: orange;
+}
+
+#audioID {
+    padding-top: 10px;
+    z-index: 3;
 }
 
 /* Media Queries */
@@ -532,6 +542,11 @@ footer>h2 {
         font-size: 28px;
     }
 
+    .contactForm>p {
+        width: 90%;
+        font-size: 28px;
+    }
+
     .spacer3 {
         height: 50vh;
         background: rgb(0, 0, 0);
@@ -551,6 +566,10 @@ footer>h2 {
 }
 
 @media screen and (max-width: 768px) {
+    canvas {
+        height: 95vh;
+    }
+
     .title {
         font-size: 70px;
     }
@@ -597,7 +616,10 @@ footer>h2 {
     }
 
     .bio>p {
-        width: 90%;
+        font-size: 24px;
+    }
+
+    .contactForm>p {
         font-size: 24px;
     }
 
@@ -610,30 +632,41 @@ footer>h2 {
         width: auto;
     }
 
+    .spacer1,
+    .spacer2,
+    .spacer3 {
+        height: 50vh;
+    }
+
 }
 
 @media screen and (max-width: 632px) {
-    .bio {
-        height: 200vh;
+    canvas {
+        height: 90vh;
     }
 
-    .spacer3 {
-        height: 100vh;
+    .bio {
+        height: 100%;
     }
 
     .spacer3>h1 {
         text-align: center;
     }
+
+    .spacer1,
+    .spacer2,
+    .spacer3 {
+        height: 40vh;
+    }
 }
 
 @media screen and (max-width: 500px) {
-
-    .bio {
-        height: 250vh;
+    canvas {
+        height: 85vh;
     }
 
-    .spacer3 {
-        height: 50vh;
+    .bio {
+        height: 100%;
     }
 
     .spacer3>h1 {
@@ -654,37 +687,76 @@ footer>h2 {
         top: 75%;
         left: 50%;
     }
+
+    .spacer1,
+    .spacer2,
+    .spacer3 {
+        height: 30vh;
+    }
+
+    .spacer3>h1 {
+        width: 90vw;
+    }
 }
 
+
 @media screen and (max-width: 426px) {
+    canvas {
+        height: 78vh;
+    }
 
     .heroineTitle {
         text-align: center;
     }
 
     .bio {
-        height: 275vh;
+        height: 100%;
     }
 
     .bio>h1 {
         text-align: center;
     }
 
-    .spacer3 {
-        height: 75vh;
-    }
-
     .contactForm>p {
         padding: 0 10px;
     }
+
+    .spacer1,
+    .spacer2,
+    .spacer3 {
+        height: 30vh;
+    }
+
 }
 
 @media screen and (max-width: 380px) {
+
+
     .bio {
-        height: 370vh;
+        height: 100%;
     }
 
+    .spacer1,
+    .spacer2,
     .spacer3 {
-        height: 75vh;
+        height: 20vh;
+    }
+
+}
+
+
+@media only screen and (max-device-width: 932px) and (orientation: landscape) {
+
+    .spacer1,
+    .spacer2 {
+        height: 25vh;
+    }
+
+    .bio {
+        height: 100%;
+    }
+
+    .contactForm {
+        height: 100%;
     }
 }
